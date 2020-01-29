@@ -4,6 +4,8 @@
 # Por Felipe Vieira <slacklife@gmail.com>
 # Janeiro 2020
 
+# Versão 1.0.0
+
 #VARIAVEIS GLOBAIS
 
 DIRETORIO="/opt/java"
@@ -27,17 +29,17 @@ else					#SE NÃO FOR VAZIO ELE INICIA A VERIFICAO SE REALMENTE É UM ARUIVO JDK
 		local=$(ls $DIRETORIO)		#GUARDA O NOME DO DIRETORIO QUE O JAVA CRIOU
 	
 
-		echo "#INICIO VARIAVEL AMBIENTE JAVA">>$PROFILE
+		echo "#INICIO VARIAVEL AMBIENTE JAVA">>$PROFILE  #INSERE /etc/profile AS VARIAVEIS DO JAVA
 	   	echo "JAVA_HOME=$DIRETORIO/$local">>$PROFILE	
 		echo "CLASSPATH=.:$""JAVA_HOME/lib/tools.jar">>$PROFILE	
-		echo "PATH=$""JAVA_HOME/bin:$""PATH">>$PROFILE
+		echo "PATH=$""JAVA_HOME/bin:$""PATH">>$PROFILE #TEM QUE SER DESSA FORMA, SENAO ELE NAO RECONHECE
 		echo "export JAVA_HOME">>$PROFILE
 		echo "export CLASSPATH">>$PROFILE		
 		echo "export PATH">>$PROFILE
 		echo "#FIM VARIALVEL JAVA">>$PROFILE
 
-		source $PROFILE
-		java -version
+		source $PROFILE  	#ATUALIZA O TERMINAL
+		java -version		#CONFIRMA SE FOI INSTALADO CORRETAMENTE
 
   	else
 		echo "Arquivo jdk invalido"
