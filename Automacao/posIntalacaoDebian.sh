@@ -9,7 +9,11 @@
 
 #ADICIONAR AQUI OS PACOTES A SER INSTALADOS NA POSINSTALAÇÃO
 
-PACOTES="nmap screenfetch build-essential module-assistant net-tools proxychains tor sqlmap hydra nikto"
+PACOTES="nmap screenfetch build-essential module-assistant net-tools proxychains tor sqlmap hydra nikto gnome-keyring"
+
+#gnome-keyring        ---> CORRIGE O ERRO MYSQLWORKBENTCH
+#sqlmap, hydra, nikto ---> FERRAMENTA DE PENTEST
+#net-toos	      ---> INSTALA O IFCONFIG
 
 apt update
 apt upgrade
