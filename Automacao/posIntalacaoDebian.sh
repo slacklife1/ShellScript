@@ -8,8 +8,8 @@
 #VARIAVEIS GLOBAIS
 
 #ADICIONAR AQUI OS PACOTES A SER INSTALADOS NA POSINSTALAÇÃO
-
-PACOTES="nmap screenfetch build-essential module-assistant net-tools proxychains tor sqlmap hydra nikto gnome-keyring"
+echo "EDITAR O ARQUIVO /etc/sudoers e /etc/apt/sources.list"
+PACOTES="vim nmap screenfetch build-essential module-assistant net-tools proxychains tor sqlmap hydra gnome-keyring"
 
 #gnome-keyring        ---> CORRIGE O ERRO MYSQLWORKBENTCH
 #sqlmap, hydra, nikto ---> FERRAMENTA DE PENTEST
@@ -18,6 +18,6 @@ PACOTES="nmap screenfetch build-essential module-assistant net-tools proxychains
 apt update
 apt upgrade
 
-apt-get install $PACOTES
+apt-get install $PACOTES -y
 m-a prepare
 apt autoremove
