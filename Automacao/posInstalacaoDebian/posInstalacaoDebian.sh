@@ -7,7 +7,7 @@
 
 #VARIAVEIS GLOBAIS
 
-DIRETORIO="pacotes.deb"
+DIRETORIO="pacotesPontodeb"
 
 ADICIONAR="vim mysql-client nmap screenfetch build-essential module-assistant net-tools proxychains tor sqlmap hydra gnome-keyring"
 REMOVER="mariadb*"
