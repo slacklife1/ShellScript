@@ -4,6 +4,18 @@ discord-0.0.10.deb
 mysql-apt-config_0.8.15-1_all.deb
 mysql-workbench-community_8.0.19-1ubuntu18.04_amd64.deb
 
+#ADICIONAR OS PACOTES A SEREM INSTALADOS PELO REPOSITORIO
+
+buscar.list 	---> EM SEQUENCIA, SEM USO DE VIRGULA OU TABULÇÃO APENAS COM ESPACAMENTO NORMAL
+
+#ADICIONAR OS PACOTES A SEREM REMOVIDOS
+
+remover.list    ---> EM SEQUENCIA SEM USO DE VIRGULA OU TABULAÇÃO APENAS COM ESPACAMENTO NORMAL
+
+
+
+
+
 EXECUTAR
  
 sudo ./posInstalacaoDebian.sh
